@@ -32,7 +32,7 @@ export default function App() {
     let lon = location.coords?.longitude;
     console.log(lat);
     console.log(lon);
-    let apiKey = '4cbdb142954440b914a357ddd9ad939b';
+    let apiKey = '';
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
     const body = await res.json();
     console.log(body);
